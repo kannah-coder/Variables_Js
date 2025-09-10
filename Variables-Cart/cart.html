@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Variables in JavaScript</title>
+</head>
+<body>
+    <h2>Variables Example</h2>
+
+    <button onclick="console.log(`Cart quantity: ${cartQuantity}`)">Show quantity</button>
+    <button onclick="cartQuantity++; console.log(`Add to cart: ${cartQuantity}`)">+1</button>
+    <button onclick="cartQuantity+=2; console.log(`Add to cart: ${cartQuantity}`)">+2</button>
+    <button onclick="cartQuantity+=3; console.log(`Add to cart: ${cartQuantity}`)">+3</button>
+    <button onclick="cartQuantity=0; console.log(`Reset cart: ${cartQuantity}`)">Reset cart</button>
+
+    <hr>
+    <h3>Other Variable Examples</h3>
+    <button onclick="console.log(`Name: ${userName}`)">Show Name</button>
+    <button onclick="console.log(`Age: ${userAge}`)">Show Age</button>
+    <button onclick="console.log(`Total Price: $${price * quantity}`)">Show Total Price</button>
+    <button onclick="console.log(`PI value (constant): ${PI}`)">Show Constant</button>
+
+    <script>
+        // Variables for cart
+        let cartQuantity = 0;  
+
+        // Variables for user info
+        let userName = "Kannah";  
+        let userAge = 20;
+
+        // Variables for product
+        let price = 50;
+        let quantity = 3;
+
+        // Constant variable
+        const PI = 3.14159;
+
+        // Example of var (old way, rarely used now)
+        var oldVariable = "I am var";
+        console.log(oldVariable);
+    </script>
+</body>
+</html>
