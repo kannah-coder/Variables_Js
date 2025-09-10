@@ -1,4 +1,3 @@
-# Variables_Js
 # Variables in JavaScript
 
 This project is a simple HTML + JavaScript example to practice **variables**.
